@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма отправки</h1>
+
+    <form action="submit.php" method="POST">
+        <p>Текстовое поле: </p>
+        <input type="text" name="text" required>
+
+        <p>Поле ввода пароля: </p>
+        <input type="password" name="password" required>
+
+        <p>Независимые переключатели (checkbox):</p>
+        <input type="checkbox" name="check1" value="Вариант первый">
+        <input type="checkbox" name="check2" value="Вариант второй">
+        <input type="checkbox" name="check3" value="Вариант третий">
+
+        <p>Зависимые переключатели (radio):</p>
+        <input type="radio" name="radio" value="Да">
+        <input type="radio" name="radio" value="Нет">
+
+        <p>Многострочное текстовое поле (textarea):</p>
+        <textarea name="textarea" cols="40" rows="10"></textarea>
+
+        <p>Список с единственным выбором: </p>
+        <select name="select">
+            <option value="Понедельник">Понедельник</option>
+            <option value="Вторник">Вторник</option>
+            <option value="Среда">Среда</option>
+        </select>
+
+        <p>Список с множественным выбором: </p>
+        <select name="select_double" size="3" multiple>
+            <option value="Четверг">Четверг</option>
+            <option value="Пятница">Пятница</option>
+            <option value="Суббота">Суббота</option>
+        </select>
+    </br>
+    </br>
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+    </form>
+</body>
+</html>
